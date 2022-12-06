@@ -2,7 +2,6 @@
 string? userInput = "";
 char[] result = new char[3];
 
-
 while (!Int32.TryParse(userInput, out number))
 {
     Console.WriteLine("Input number from 100 to 999: ");

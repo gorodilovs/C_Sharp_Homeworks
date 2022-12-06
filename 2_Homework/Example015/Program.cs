@@ -1,8 +1,6 @@
 ﻿int number;
 string? userInput = "";
 
-
-
 while (!Int32.TryParse(userInput, out number))
 {
     Console.WriteLine("Input number of the day in the week: ");
