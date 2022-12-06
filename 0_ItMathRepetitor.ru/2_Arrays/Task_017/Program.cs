@@ -40,4 +40,3 @@ while(!(count1 == count0 + count2))
     }
     Console.WriteLine($"!!! {count0} {count1} {count2} ");
 }
-

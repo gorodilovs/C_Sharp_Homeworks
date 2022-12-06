@@ -5,7 +5,6 @@ Random rnd = new Random();
 int x = 8;
 bool cont = false;
 
-
 for (int i = 0; i < arr.Length; i++)
 {
     arr[i] = rnd.Next(0, 10);
