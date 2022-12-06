@@ -3,7 +3,6 @@
 namespace C_Homework_1
 {
     //Программа с домашними заданиями Семинар 1.
-
     class Program
     {
 

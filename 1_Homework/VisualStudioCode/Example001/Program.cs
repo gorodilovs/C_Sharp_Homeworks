@@ -25,7 +25,6 @@ while (!Int32.TryParse(userInput, out b))
         b = Convert.ToInt32(userInput);
     else
         Console.WriteLine("Wrong format of b!");
-
 }
 
 if (a == (int)Math.Pow(b, 2))

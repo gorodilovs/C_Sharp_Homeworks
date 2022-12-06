@@ -1,6 +1,5 @@
 ﻿string userInput = "";
 int numberOfTheDay;
-
 Console.WriteLine("Задача №3. Напишите программу, которая будет выдавать название дня недели по заданному номеру.");
 
 while (!Int32.TryParse(userInput, out numberOfTheDay))

@@ -1,7 +1,6 @@
 ﻿namespace C_Homework_1
 {
     //Задача №3. Напишите программу, которая будет выдавать название дня недели по заданному номеру.
-
     internal class Example3
     {
         public void Task()
