@@ -52,3 +52,4 @@ if(geom)
     Console.WriteLine("This is geom progression!");
 else
     Console.WriteLine("This is not geom progression!");  
+    
