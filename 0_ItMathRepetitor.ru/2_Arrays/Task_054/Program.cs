@@ -31,6 +31,7 @@ for (int i = 0; i < arr.Length - 4; i++)
     }
 }
 
+
 Console.WriteLine("Original array: ");
 foreach (int n in arr)
 {

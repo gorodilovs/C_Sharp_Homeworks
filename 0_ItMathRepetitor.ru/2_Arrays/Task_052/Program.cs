@@ -63,3 +63,4 @@ for (int i = 0; i < counter1; i++)
 {
     Console.WriteLine($"Matched number {matches[i]} appears {matches[matches.Length/2 + i]} times.");
 }
+

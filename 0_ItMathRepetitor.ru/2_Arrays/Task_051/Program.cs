@@ -19,7 +19,7 @@ for (int i = 0; i < arr.Length; i++)
         min1 = arr[i];
     }
 }
-
+ 
 foreach (int n in arr)
 {
     Console.Write(n + " ");
