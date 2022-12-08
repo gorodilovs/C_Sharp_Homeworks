@@ -69,6 +69,7 @@ System.Console.WriteLine(max);
 //     }
 // }
 
+
 System.Console.WriteLine("Modifyed array: ");
 Array.Resize(ref arr, arr.Length - counter);
 PrintArray(arr);
