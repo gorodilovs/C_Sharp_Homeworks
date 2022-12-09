@@ -37,6 +37,6 @@ for (int i = 0; i < arr.Length - 1 - counter; i++)
     }
 }
 
-System.Console.WriteLine("Modifyed array: ");
+System.Console.WriteLine("Modified array: ");
 Array.Resize(ref arr, arr.Length - counter);
 PrintArray(arr);
