@@ -1,5 +1,5 @@
 ﻿// Задайте двумерный массив размером m×n, заполненный
-// случайными вещественными числами. 
+// случайными вещественными числами. ()
 
 int KeyboardInput(string name)
 {
@@ -28,7 +28,8 @@ void FillAndPrintArray(double[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = rnd.NextDouble() * 10;
+            arr[i, j] = rnd.Next(-10, 10) + rnd.Next(1, 10) * 0.1;
+            // arr[i, j] = rnd.NextDouble() * 10;
             System.Console.Write(arr[i, j] + " ");
         }
         System.Console.WriteLine();
