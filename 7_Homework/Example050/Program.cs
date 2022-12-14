@@ -42,7 +42,10 @@ FillAndPrintArray(arr);
 int index1 = KeyboardInput("Input first index: ");
 int index2 = KeyboardInput("Input second index: ");
 
-if (index1 > arr.GetLength(0) - 1 || index2 > arr.GetLength(1) - 1)
+if (index1 > arr.GetLength(0) - 1
+     || index2 > arr.GetLength(1) - 1
+     || index1 < 0
+     || index2 < 0)
 {
     System.Console.WriteLine("Index out of range!");
 }
