@@ -32,7 +32,7 @@ for (int i = 0; i < arr.GetLength(0); i++)
 {
     for (int j = 0; j < arr.GetLength(1); j++)
     {
-        arr[i, j] = rnd.Next(1, 10);
+        arr[i, j] = rnd.Next(1, 100);
     }
 }
 
@@ -42,20 +42,31 @@ PrintArray(arr);
 // Sorting
 
 int temp;
-int max;
+int maxIndex;
 int counter;
 
 for (int i = 0; i < arr.GetLength(0); i++)
-{
-    max = arr[i, 0];
+{    
     counter = 0;
     
     for (int j = 0; j < arr.GetLength(1); j++)
-    {
-        if (arr[i, j] >= max)
+    {   
+        maxIndex = counter;
+        for (int k = counter; k < arr.GetLength(1); k++)
         {
-            arr[i, j] = max;
-        }        
-    }
+            if (arr[i, k] >= arr[i, maxIndex])
+            {
+                maxIndex = k;
+            }
+        }
 
+        temp = arr[i, j];
+        arr[i, j] = arr[i, maxIndex];
+        arr[i, maxIndex] = temp;
+
+        counter++;
+    }
 }
+
+System.Console.WriteLine("Sorted array: ");
+PrintArray(arr);
